@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 361710425}
   - component: {fileID: 361710424}
   - component: {fileID: 361710423}
+  - component: {fileID: 361710426}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -406,6 +407,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361710420}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &361710426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361710420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f273e9857e93d340b315e26648bac13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &413537742
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +529,8 @@ GameObject:
   - component: {fileID: 559608850}
   - component: {fileID: 559608849}
   - component: {fileID: 559608848}
+  - component: {fileID: 559608851}
+  - component: {fileID: 559608852}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -601,6 +616,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559608845}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &559608851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559608845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f273e9857e93d340b315e26648bac13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &559608852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559608845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f273e9857e93d340b315e26648bac13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &599994577
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +652,8 @@ GameObject:
   - component: {fileID: 599994582}
   - component: {fileID: 599994581}
   - component: {fileID: 599994580}
+  - component: {fileID: 599994583}
+  - component: {fileID: 599994584}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -698,6 +739,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599994577}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &599994583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599994577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f273e9857e93d340b315e26648bac13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &599994584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599994577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f273e9857e93d340b315e26648bac13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +905,7 @@ GameObject:
   - component: {fileID: 924394330}
   - component: {fileID: 924394329}
   - component: {fileID: 924394328}
+  - component: {fileID: 924394331}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -925,6 +991,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924394325}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &924394331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924394325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f273e9857e93d340b315e26648bac13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
