@@ -6,6 +6,15 @@ using UnityEngine;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip crash;
+
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     // fucntion
     void OnCollisionEnter(Collision other)
     {
@@ -15,7 +24,7 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Friendly");
                 break;
             case "Finish":
-                LoadNextLevel();
+                StartSuccessSequence();
                 break;
             case "Fuel":
                 Debug.Log("Fuel");
@@ -29,7 +38,7 @@ public class CollisionHandler : MonoBehaviour
     void StartCrashSequence()
     {
         // SFX crash
-
+        audioSource.PlayOneShot(crash);
         // Particle crash
 
         GetComponent<Movement>().enabled = false;
@@ -45,9 +54,9 @@ public class CollisionHandler : MonoBehaviour
     }
     void StartSuccessSequence()
     {
-        // SFX crash
-
-        // Particle crash
+        // SFX success
+        audioSource.PlayOneShot(success);
+        // Particle success
 
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
