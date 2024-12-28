@@ -2569,6 +2569,10 @@ PrefabInstance:
       propertyPath: rightEngineThrust
       value: 
       objectReference: {fileID: 1050288565}
+    - target: {fileID: 507671934, guid: 783d8af0dc0c6bd47a06d13012549708, type: 3}
+      propertyPath: m_Volume
+      value: 0.049
+      objectReference: {fileID: 0}
     - target: {fileID: 507671941, guid: 783d8af0dc0c6bd47a06d13012549708, type: 3}
       propertyPath: crashParticle
       value: 
