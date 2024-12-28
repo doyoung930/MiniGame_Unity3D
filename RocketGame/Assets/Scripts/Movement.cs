@@ -69,26 +69,36 @@ public class Movement : MonoBehaviour
             audioSource.PlayOneShot(mainEngine);
         }
         if(!mainEngineThrust.isPlaying){
+            
             mainEngineThrust.Play();
         }        
     }
     void StopThrusting()
     {
+        if(!leftEngineThrust.isPlaying && !rightEngineThrust.isPlaying){
         audioSource.Stop();
+        }
         mainEngineThrust.Stop();
     }
-    void StartRotatingLeft(){
-        ApplyRoation(rotationThrust);
-            if(!mainEngineThrust.isPlaying){
-                leftEngineThrust.Play();
-            }
+void StartRotatingLeft(){
+    ApplyRoation(rotationThrust);
+    if(!leftEngineThrust.isPlaying){
+        leftEngineThrust.Play();
     }
-    void StartRotatingRight(){
-        ApplyRoation(-rotationThrust);
-            if(!mainEngineThrust.isPlaying){
-                rightEngineThrust.Play();
-            }
+    if (!audioSource.isPlaying) {
+        audioSource.PlayOneShot(mainEngine);
     }
+}
+
+void StartRotatingRight(){
+    ApplyRoation(-rotationThrust);
+    if(!rightEngineThrust.isPlaying){
+        rightEngineThrust.Play();
+    }
+    if (!audioSource.isPlaying) {
+        audioSource.PlayOneShot(mainEngine);
+    }
+}
     void StopRotating(){
         
         leftEngineThrust.Stop();
