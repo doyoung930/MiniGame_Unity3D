@@ -176,6 +176,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &538004008 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8388933694187421671, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
+  m_PrefabInstance: {fileID: 6274763510278038898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,23 +411,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1915723295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915723290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 720167299e285184a885a924e9a8b0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadDelay: 1
 --- !u!1 &2139286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +528,10 @@ PrefabInstance:
       propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 3623832159189456250, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
+      propertyPath: crashVFX
+      value: 
+      objectReference: {fileID: 538004008}
     - target: {fileID: 5116222334585071272, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
       propertyPath: m_Name
       value: Player Ship
@@ -607,6 +603,18 @@ PrefabInstance:
     - target: {fileID: 7073609432562703250, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388933694187421664, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388933694187421664, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388933694187421664, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ddf644d0a3fbe246bdb8e396c67c505, type: 3}
