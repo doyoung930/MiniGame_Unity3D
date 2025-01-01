@@ -15,6 +15,11 @@ public class Enemy : MonoBehaviour
     {
         // 절대 Update에 쓰여선 안된다.
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        AddRigidbody();
+    }
+    void AddRigidbody(){
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
     }
     void OnParticleCollision(GameObject other)
     {
