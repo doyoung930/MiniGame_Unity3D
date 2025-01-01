@@ -9,13 +9,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] int scorePerHit = 15;
     [SerializeField] int hitPoints = 4;
     ScoreBoard scoreBoard;
-    GameObject parent;
+    GameObject parentGameObject;
 
     void Start()
     {
         // 절대 Update에 쓰여선 안된다.
         scoreBoard = FindObjectOfType<ScoreBoard>();
-        parent = GameObject.FindWithTag("SpawnAtRuntime");
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
         AddRigidbody();
     }
     void AddRigidbody(){
@@ -34,13 +34,13 @@ public class Enemy : MonoBehaviour
 
     void PreocessHit(){
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent.transform;
+        vfx.transform.parent = parentGameObject.transform;
         hitPoints--;
         scoreBoard.IncreaseScore(scorePerHit);
     }
     void KillEnemy(){
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent.transform;
+        vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 }

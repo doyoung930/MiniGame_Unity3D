@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 502804049}
   m_Layer: 0
   m_Name: Spawn at Runtime
-  m_TagString: Untagged
+  m_TagString: SpawnAtRuntime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,7 +299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 9d7bacffebe3a8b46bbe4bf4a3657d78, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: cba0a26e5bca26b41aedda53f8515de5, type: 3}
-  parent: {fileID: 502804049}
   scorePerHit: 15
   hitPoints: 4
 --- !u!1 &705507993
@@ -529,7 +528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 9d7bacffebe3a8b46bbe4bf4a3657d78, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: cba0a26e5bca26b41aedda53f8515de5, type: 3}
-  parent: {fileID: 502804049}
   scorePerHit: 15
   hitPoints: 4
 --- !u!1 &1603675934 stripped
@@ -556,7 +554,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 9d7bacffebe3a8b46bbe4bf4a3657d78, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: cba0a26e5bca26b41aedda53f8515de5, type: 3}
-  parent: {fileID: 502804049}
   scorePerHit: 15
   hitPoints: 4
 --- !u!1 &1915723290 stripped
@@ -656,7 +653,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 9d7bacffebe3a8b46bbe4bf4a3657d78, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: cba0a26e5bca26b41aedda53f8515de5, type: 3}
-  parent: {fileID: 502804049}
   scorePerHit: 15
   hitPoints: 4
 --- !u!1001 &2068979546
