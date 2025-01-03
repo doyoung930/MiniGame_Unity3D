@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6760775023826988526, guid: 836a52e2d5725d54592e8cba79713fa1, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8037361214176747858, guid: 836a52e2d5725d54592e8cba79713fa1, type: 3}
       propertyPath: m_Name
       value: Tile Corner
