@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int goldReward = 25;
-    [SerializeField] private int goldPenalty = 25;
+    [SerializeField] int goldReward = 25;
+    [SerializeField] int goldPenalty = 25;
     
     
     
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
         {
             return;
         }
-        bank.Withdraw(goldReward);
+        bank.Withdraw(goldPenalty);
     }
     
 }
