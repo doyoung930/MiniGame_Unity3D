@@ -21,23 +21,23 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
-        if (gridManager != null)
+        if(gridManager != null)
         {
             coordinates = gridManager.GetCoordinatesFromPosition(transform.position);
-            if (!isPlaceable)
+
+            if(!isPlaceable)
             {
                 gridManager.BlockNode(coordinates);
             }
         }
     }
-    
+
     void OnMouseDown()
     {
         if(gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates))
         {
             bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
             isPlaceable = !isPlaced;
-            
             gridManager.BlockNode(coordinates);
         }
     }

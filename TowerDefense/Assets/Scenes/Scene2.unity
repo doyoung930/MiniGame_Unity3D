@@ -14973,6 +14973,10 @@ PrefabInstance:
       value: ObjectPool
       objectReference: {fileID: 0}
     - target: {fileID: 928859766460065065, guid: 3f849e813afe5bc4598577f5105a17c9, type: 3}
+      propertyPath: poolSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 928859766460065065, guid: 3f849e813afe5bc4598577f5105a17c9, type: 3}
       propertyPath: spawnTimer
       value: 2.5
       objectReference: {fileID: 0}

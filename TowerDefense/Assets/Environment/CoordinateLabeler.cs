@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -26,15 +26,15 @@ public class CoordinateLabeler : MonoBehaviour
 
     void Update()
     {
-       if(!Application.isPlaying)
-       {
-           DisplayCoordinates();
-           UpdateObjectName();
-           label.enabled = true;
-       }
-       label.enabled = true;
-       SetLabelColor();
-       ToggleLabels();
+        if(!Application.isPlaying)
+        {
+            DisplayCoordinates();
+            UpdateObjectName();
+            label.enabled = true;
+        }
+
+        SetLabelColor();
+        ToggleLabels();
     }
 
     void ToggleLabels()
