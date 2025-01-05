@@ -6,35 +6,33 @@ using UnityEngine;
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] List<Tile> path = new List<Tile>();
-    [SerializeField] [Range(0f, 5f)] float speed = 1f;
-    
-    private Enemy enemy;
+    [SerializeField] [Range(0f, 5f)] float speed = 1f; 
 
-    void Start()
-    {
-        enemy = GetComponent<Enemy>();
-    }
-    
+    Enemy enemy;
+
     void OnEnable()
     {
         FindPath();
         ReturnToStart();
         StartCoroutine(FollowPath());
+    }
 
+    void Start()
+    {
+        enemy = GetComponent<Enemy>();
     }
 
     void FindPath()
     {
         path.Clear();
-        
-        
-        GameObject parent = GameObject.FindGameObjectWithTag("Path");
 
-        foreach (Transform child in parent.transform)
+        GameObject[] tiles = GameObject.FindGameObjectsWithTag("Path");
+
+        foreach(GameObject tile in tiles) 
         {
-            Tile waypoint = child.GetComponent<Tile>();
+            Tile waypoint = tile.GetComponent<Tile>();
 
-            if (waypoint != null)
+            if(waypoint != null)
             {
                 path.Add(waypoint);
             }
@@ -51,24 +49,24 @@ public class EnemyMover : MonoBehaviour
         enemy.StealGold();
         gameObject.SetActive(false);
     }
-    IEnumerator FollowPath()
+
+    IEnumerator FollowPath() 
     {
-        foreach (Tile waypoint in path)
+        foreach(Tile waypoint in path) 
         {
             Vector3 startPosition = transform.position;
             Vector3 endPosition = waypoint.transform.position;
             float travelPercent = 0f;
-            
+
             transform.LookAt(endPosition);
-            
-            while (travelPercent < 1f)
-            {
+
+            while(travelPercent < 1f) {
                 travelPercent += Time.deltaTime * speed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
                 yield return new WaitForEndOfFrame();
             }
         }
+
         FinishPath();
-        
     }
 }
